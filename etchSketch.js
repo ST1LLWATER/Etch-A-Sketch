@@ -65,4 +65,5 @@ function clearCanvas() {
     { once: true }
   );
   ctx.clearRect(0, 0, width, height);
+  ctx.beginPath();
 }
