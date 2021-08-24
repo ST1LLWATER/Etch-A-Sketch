@@ -14,6 +14,12 @@ body {
   background-size: cover;
 }
 
+.canvasWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 canvas {
   border: 30px solid #e80000;
   border-radius: 10px;
@@ -25,7 +31,26 @@ canvas {
 
 canvas.shake {
   animation: shake 0.5s linear 1;
+  -webkit-animation: shake 0.5s linear 1;
 }
+
+.buttons .shake {
+  padding: 5px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 @keyframes shake {
   10%,
   90% {
